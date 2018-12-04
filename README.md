@@ -6,4 +6,4 @@ Warning: This repository is not complete and still under beta testing.
 
 ## Licensing
 
-Rakuten Reward SDK is under commercial license. Copyright 2018 Rakuten, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions, please register at [Rakuten Reward Developer Portal](https://developer.reward.gl.rakuten.co.jp/main) for access.
+Rakuten Reward SDK is under commercial license. Copyright © Rakuten Asia Pte. Ltd. All Rights Reserved. Use of this software is subject to the terms and conditions, please register at [Rakuten Reward Developer Portal](https://developer.reward.gl.rakuten.co.jp/main) for access.

@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
 
     s.platform          = :ios
     s.source            = { :http => 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/5.2.2/RakutenRewardSDK.framework.zip' }
-    
-    s.compiler_flags = 'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO'
+    s.user_target_xcconfig = { 'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES' }
     s.ios.deployment_target = '8.0'
     s.ios.vendored_frameworks = 'RakutenRewardSDK.framework'
 end

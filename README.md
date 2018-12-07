@@ -2,7 +2,7 @@
 
 Public releases for Rakuten Reward SDK, iOS version, including CocoaPods and Carthage specs.
 
-Warning: This repository is not complete and still under beta testing.
+Warning: Reward SDK on CocoaPods and Carthage is a work in progress - please provide feedback via the issues tab.
 
 ## Licensing
 

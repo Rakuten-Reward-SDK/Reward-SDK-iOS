@@ -28,6 +28,23 @@ open `Build Phases` of Xcode project and add `New Run Script Phase`, add a setup
 
 ![](/docs/images/run-script-copy-frameworks.png)
 
+### via CocoaPods
+
+Adding Reward SDK via CocoaPods require custom `source`, please add to your `Podfile` the spec as below
+
+```ruby
+source 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS.git'
+ 
+target '<YOUR_TARGET_NAME>' do
+  use_frameworks!
+pod 'RakutenRewardSDK'
+end
+```
+
+Run `pod install` from command line, and you're good to go, there's no step 3.
+
+For more technical details on CocoaPods, please visit its [documentation](https://guides.cocoapods.org/using/using-cocoapods).
+
 ## Licensing
 
 Rakuten Reward SDK is under commercial license. Copyright © Rakuten Asia Pte. Ltd. All Rights Reserved. Use of this software is subject to the terms and conditions, please register at [Rakuten Reward Developer Portal](https://developer.reward.gl.rakuten.co.jp/main) for access.

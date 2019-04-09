@@ -18,21 +18,25 @@ binary "https://raw.githubusercontent.com/Rakuten-Reward-SDK/Reward-SDK-iOS/mast
 
 Run `carthage update` to download the latest version of SDK to `<YOUR_PROJECT_FOLDER>/Carthage/iOS`. Drag `RakutenRewardSDK.framework` from this folder to `Linked Frameworks and Libraries` (**DO NOT** drag it to `Embedded Binaries`, it will conflict with `copy-frameworks` script of Carthage).
 
-![](/docs/images/linked-frameworks.png)
+![](./docs/images/linked-frameworks.png)
 
-If you're making an Objective-C app, make sure enabling `Always embed Swift Standard Libraries` in project `Build Settings`.
+**NO NEED** enabling `Always embed Swift Standard Libraries` in project `Build Settings` if you're on Swift project or using Reward SDK **6.0.0** and later.
 
 Finally, use built-in script of Carthage to remove fat binary framework issue for App Store submission: 
 
-open `Build Phases` of Xcode project and add `New Run Script Phase`, add a setup as in the image below
+open `Build Phases` of Xcode project and add `New Run Script Phase`, add a setup as in the image below:
+- shell script: `/usr/local/bin/carthage copy-frameworks`
+- Input files: `$(SRCROOT)/Carthage/Build/iOS/RakutenRewardSDK.framework`
+- Output files: `$(BUILD_PRODUCT_DIR)/$(FRAMEWORK_FOLDER_PATH)/RakutenRewardSDK.framework`  
 
-![](/docs/images/run-script-copy-frameworks.png)
+![](./docs/images/run-script-copy-frameworks.png)
 
 ### via CocoaPods
 
 Adding Reward SDK via CocoaPods require custom `source`, please add to your `Podfile` the spec as below
 
 ```ruby
+source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS.git'
  
 target '<YOUR_TARGET_NAME>' do
@@ -44,6 +48,8 @@ end
 Run `pod install` from command line, and you're good to go, there's no step 3.
 
 For more technical details on CocoaPods, please visit its [documentation](https://guides.cocoapods.org/using/using-cocoapods).
+
+**Warning**: CocoaPods might face some [issues with Xcode 10.2](https://github.com/CocoaPods/CocoaPods/issues/8458), please update to latest CocoaPods version
 
 ## Licensing
 

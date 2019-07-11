@@ -20,7 +20,7 @@ Run `carthage update` to download the latest version of SDK to `<YOUR_PROJECT_FO
 
 ![](./docs/images/linked-frameworks.png)
 
-**NO NEED** enabling `Always embed Swift Standard Libraries` in project `Build Settings` if you're on Swift project or using Reward SDK **6.0.0** and later.
+**NO NEED** enabling `Always embed Swift Standard Libraries` in project `Build Settings` if you're on Swift project.
 
 Finally, use built-in script of Carthage to remove fat binary framework issue for App Store submission: 
 

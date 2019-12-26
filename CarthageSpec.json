@@ -1,9 +1,11 @@
 {
     "5.2.2":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/5.2.2/RakutenRewardSDK.framework.zip",
     "5.2.3":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/5.2.3/RakutenRewardSDK.framework.zip",
+    "5.2.4":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/5.2.4/RakutenRewardSDK-5.2.4-b31-Release-XC10B61.zip",
     
     "6.0.0":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.0/RakutenRewardSDK.framework.zip",
     "6.0.1":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.1/RakutenRewardSDK.framework.zip",
     "6.0.2":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.2/RakutenRewardSDK_6.0.2_b6.zip",
-    "6.0.3":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.3/RakutenRewardSDK-6.0.3-b4.zip"
+    "6.0.3":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.3/RakutenRewardSDK-6.0.3-b4.zip",
+    "6.0.4":"https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/6.0.4/RakutenRewardSDK-6.0.4-b31-Release-XC11B53.zip"
 }

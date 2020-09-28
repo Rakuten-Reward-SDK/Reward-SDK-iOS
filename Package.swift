@@ -10,6 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "RakutenRewardSDK",
+            type: .dynamic,
             targets: ["RakutenRewardSDK"]),
     ],
     dependencies: [
@@ -19,6 +20,8 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(name: "RakutenRewardSDK", url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/7.0.2/RakutenRewardNativeSDK-7.0.2.xcframework.zip", checksum: "08f9e554306edeba8c0560a243aa7c4e7887d33a5397899b799a7ad16a10ca08"),
+        .binaryTarget(name: "RakutenRewardSDK",
+                      url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/8.0.0/RakutenRewardSDK-8.0.0-12.xcframework.zip",
+                      checksum: "a3ea12b1fef1c5a02130c5784cabe0af640026ab2e43d7950d7871652b469ddf"),
     ]
 )

@@ -2,8 +2,6 @@
 
 Public releases for Rakuten Reward SDK, iOS version, including CocoaPods and Carthage specs.
 
-Warning: Reward SDK on CocoaPods and Carthage is a work in progress - please provide feedback via the issues tab.
-
 ## Integration with Xcode projects
 
 Swift frameworks are not necessarily binary compatible across different Xcode versions. Please pay attention to the Xcode version that was used to compile the SDK for iOS.
@@ -50,6 +48,17 @@ Run `pod install` from command line, and you're good to go, there's no step 3.
 For more technical details on CocoaPods, please visit its [documentation](https://guides.cocoapods.org/using/using-cocoapods).
 
 **Warning**: CocoaPods might face some [issues with Xcode 10.2](https://github.com/CocoaPods/CocoaPods/issues/8458), please update to latest CocoaPods version
+
+### via Swift Package Manager (SPM)
+
+Add the dependency value below
+
+```
+dependencies: [
+    .package(url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS-SPM.git", .exact("9.2.0")),
+]
+```
+
 
 ## Licensing
 

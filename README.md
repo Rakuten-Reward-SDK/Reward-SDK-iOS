@@ -20,7 +20,7 @@ Run `carthage update` to download the latest version of SDK to `<YOUR_PROJECT_FO
 
 **NO NEED** enabling `Always embed Swift Standard Libraries` in project `Build Settings` if you're on Swift project.
 
-Finally, use built-in script of Carthage to remove fat binary framework issue for App Store submission: 
+Finally, use built-in script of Carthage to remove fat binary framework issue for App Store submission (for v9.1.0 and below) 
 
 open `Build Phases` of Xcode project and add `New Run Script Phase`, add a setup as in the image below:
 - shell script: `/usr/local/bin/carthage copy-frameworks`
@@ -55,7 +55,7 @@ Add the dependency value below
 
 ```
 dependencies: [
-    .package(url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS-SPM.git", .exact("9.2.0")),
+    .package(url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS-SPM.git", .exact("9.4.0")),
 ]
 ```
 

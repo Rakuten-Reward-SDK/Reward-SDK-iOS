@@ -55,7 +55,7 @@ Add the dependency value below
 
 ```
 dependencies: [
-    .package(url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS-SPM.git", .exact("9.4.0")),
+    .package(url: "https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS-SPM.git", .exact("9.4.1")),
 ]
 ```
 

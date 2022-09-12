@@ -10,7 +10,5 @@ Pod::Spec.new do |s|
     s.platform          = :ios
     s.source            = { :http => 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/9.4.3/RakutenRewardSDK-9.4.3.xcframework.zip' }
     s.ios.deployment_target = '11.0'
-    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     s.ios.vendored_frameworks = 'RakutenRewardSDK.xcframework'
 end

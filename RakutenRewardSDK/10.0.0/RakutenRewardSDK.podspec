@@ -7,9 +7,11 @@ Pod::Spec.new do |s|
     s.author            = 'Rakuten Reward Group'
     s.license           = { :type => 'Commercial', :text => 'Copyright © Rakuten Asia Pte. Ltd. All Rights Reserved.' }
     s.user_target_xcconfig = { 
-        'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES',
+        'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES'
+    }
+    s.pod_target_xcconfig  = {
         'CODE_SIGNING_ALLOWED' => 'NO'
-}
+    }
     s.platform          = :ios
     s.source            = { :http => 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/10.0.0/RakutenRewardSDK-10.0.0.xcframework.zip' }
     s.ios.deployment_target = '11.0'

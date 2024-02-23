@@ -9,11 +9,8 @@ Pod::Spec.new do |s|
     s.user_target_xcconfig = { 
         'ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES' => 'YES'
     }
-    s.pod_target_xcconfig  = {
-        'CODE_SIGNING_ALLOWED' => 'NO'
-    }
     s.platform          = :ios
     s.source            = { :http => 'https://github.com/Rakuten-Reward-SDK/Reward-SDK-iOS/releases/download/11.0.0/RakutenRewardSDK-11.0.0.xcframework.zip' }
-    s.ios.deployment_target = '11.0'
+    s.ios.deployment_target = '12.0'
     s.ios.vendored_frameworks = 'RakutenRewardSDK.xcframework'
 end
